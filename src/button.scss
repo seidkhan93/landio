@@ -1,0 +1,77 @@
+$colorPrimary = #ffffff;
+$colorSecondary = #6c59b4;
+
+.button {
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: {
+        width: 2px;
+        style: solid;
+    }
+
+    &_primary{
+        background-color: : inherit;
+        padding: 23px 41px 21px 71px;
+        line-height: 30px;
+        font-size: 22px;
+        color: $colorPrimary;
+        border-color: $colorPrimary;
+    }
+
+    &_secondary{
+        background-color: $colorSecondary;
+        padding: 23px 74px 21px 70px;
+        line-height: 30px;
+        font-size: 22px;
+        color: $colorPrimary;
+        border-color: $colorSecondary;
+    }
+
+    &_alternative{
+        background-color: : inherit;
+        border: 2px solid $colorSecondary;
+        padding: 23px 41px 21px 71px;
+        line-height: 15px;
+        font-size: 13px;
+        color: $colorSecondary;
+        border-color: $colorSecondary
+    }
+}
+
+.button_primary {
+    background: #fe6a6b;
+    padding: 10px 24px;
+    line-height: 30px;
+    font-size: 22px;
+    color: #faf9fa;
+}
+
+.button_secondary {
+    background-color: inherit;
+    border: 2px solid #432e30;
+    padding: 14px 0px 9px 0px;
+    color: #432e30;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.button:hover {
+    background-color: #f2d9e6;
+}
+
+.button:active {
+	background-color: #f2d9e6;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.button:focus {
+	background-color: #f2d9e6;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
