@@ -38,4 +38,49 @@ table {
   border-spacing: 0;
 }
 
+.button {
+  outline: none;
+  padding: 23px 70px 21px 70px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 200ms;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40px;
+}
+.button_primary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.button_secondary {
+  background-color: #6c59b4;
+  color: #ffffff;
+  border-color: #6c59b4;
+}
+.button_alternative {
+  border: 2px solid #6c59b4;
+  color: #6c59b4;
+  border-color: #6c59b4;
+}
+.button_img {
+  padding-right: 41px;
+  text-align: right;
+  background-image: url("src/button__icon.svg");
+  background-repeat: no-repeat;
+  background-position: 36px center;
+}
+.button:hover {
+  background-color: #f2d9e6;
+}
+.button:active, .button:focus {
+  background-color: #f2d9e6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /*# sourceMappingURL=style.css.map */
