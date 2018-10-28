@@ -1,0 +1,62 @@
+$colorPrimary: #ffffff;
+$colorSecondary: #6c59b4;
+$colorAnimation: #f2d9e6;
+$buttonIcon: "src/button__icon.svg";
+
+.button {
+    outline: none;
+    padding: 23px 70px 21px 70px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: inherit;
+    transition: all 200ms;
+    border: {
+        width: 2px;
+        style: solid;
+        radius: 40px;
+    }
+
+    &_primary{
+        color: $colorPrimary;
+        border-color: $colorPrimary;
+    }
+
+    &_secondary{
+        background-color: $colorSecondary;
+        color: $colorPrimary;
+        border-color: $colorSecondary;
+    }
+
+    &_alternative{
+        border: 2px solid $colorSecondary;
+        color: $colorSecondary;
+        border-color: $colorSecondary
+    }
+
+    &_img {
+        padding-right: 41px;
+        text-align: right;
+        background: {
+            image: url($buttonIcon);
+            repeat: no-repeat;
+            position: 36px center;
+        }
+    }
+
+    &:hover {
+        background-color: #f2d9e6;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $colorAnimation;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
+
+
