@@ -86,11 +86,11 @@ table {
   border-radius: 5px;
   transition: border-color 250ms; }
   .input_name {
-    background-image: url("icons/name.svg"); }
+    background-image: url("src/icons/inputs/name.svg"); }
   .input_email {
-    background-image: url("icons/email.svg"); }
+    background-image: url("src/icons/inputs/email.svg"); }
   .input_password {
-    background-image: url("icons/password.svg"); }
+    background-image: url("src/icons/inputs/password.svg"); }
   .input:focus {
     border-color: #8779bd;
     box-shadow: 2px 2px 10px rgba(135, 121, 189, 0.4), -2px -2px 10px rgba(135, 121, 189, 0.4);
@@ -103,7 +103,7 @@ table {
   .checkbox + .custom::after {
     content: none; }
   .checkbox:checked + .custom::after {
-    content: url("icons/check.svg"); }
+    content: url("src/icons/inputs/check.svg"); }
   .checkbox:focus + .custom::before {
     outline: #3b99fc auto 5px; }
 
@@ -135,7 +135,7 @@ table {
     background-color: #ffffff;
     border: 2px solid #e0e0e5; }
   .custom::after {
-    content: url("icons/check.svg");
+    content: url("src/icons/inputs/check.svg");
     top: 0;
     left: -23px; }
 
