@@ -3,9 +3,33 @@
 <head>
 	<title>Test!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/* Как будет готов main, стереть стили */
+		* {
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 <!-- This is for testing your code!-->
-<body >
-	
+<body>
+
+
+	<!-- Гайд для форм (не Удаляй, ухо откушу...)-->
+	<!-- Гайд для форм (не Удаляй, ухо откушу...)-->
+	<!-- Гайд для форм (не Удаляй, ухо откушу...)-->
+	<!-- Гайд для форм (не Удаляй, ухо откушу...)-->
+
+	<form>
+		<input class="input input_name" type="text"  name="name" placeholder="Your name" required maxlength="50"> 
+		<input class="input input_email" type="email" name="email" placeholder="Email address" required maxlength="64">
+		<input class="input input_password" type="password" name="password" placeholder="Enter a password" required>
+		<div>
+		<input class="checkbox" type="checkbox" name="terms" id="terms-label" required>
+		<label class="custom" for="terms-label" >
+			I agree to Land.io’s <a href="#" class="custom__link">terms of service</a>
+		</label>
+		</div>
+
+	</form>
 </body>
 </html>
