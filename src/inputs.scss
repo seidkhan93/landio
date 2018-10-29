@@ -1,0 +1,126 @@
+$nameImage: url('src/icons/inputs/name.svg');
+$emailImage: url('src/icons/inputs/email.svg');
+$passwordImage: url('src/icons/inputs/password.svg');
+$checkboxImage: url('src/icons/inputs/check.svg');
+
+$bgColor: #ffffff;
+$textColor: #424753;
+$borderColor: #e0e0e5;
+$focusColor: #8779bd;
+
+.input {
+	position: relative;
+	width: 263px;
+	height: 60px;
+	padding: 15px 20px 15px 70px;
+
+	font-family: inherit;
+	font-size: 16px;
+	color: $textColor;
+	line-height: 32px;
+	font-weight: normal;
+	vertical-align: middle;
+
+	background-color: $bgColor;
+	background: {
+		position: 17px center;
+		repeat: no-repeat;
+	}
+
+	border: 2px solid $borderColor;
+	border-radius: 5px;
+
+	transition: border-color 250ms;
+
+	&_name {
+		background-image: $nameImage;
+	}
+
+	&_email {
+		background-image: $emailImage;
+	}
+
+	&_password {
+		background-image: $passwordImage;
+	}
+
+	&:focus {
+		border-color: $focusColor;
+
+		box-shadow: 2px 2px 10px rgba(135, 121, 189, 0.4),
+					-2px -2px 10px rgba(135, 121, 189, 0.4);
+		outline: none;
+	}
+}
+
+.checkbox {
+	opacity: 0;
+	margin: 0;
+	margin-left: 13px;
+
+	& + .custom::after {
+		content: none;
+	}
+
+	&:checked + .custom::after {
+		content: $checkboxImage;
+	}
+
+	&:focus + .custom::before {
+		outline: rgb(59, 153, 252) auto 5px;
+	}
+}
+
+.custom {
+	position: relative;
+	font-family: inherit;
+	font-size: 15px;
+	line-height: 18px;
+
+	color: rgba(66, 71, 83, 0.8);
+
+	&__link {
+		text-decoration: none;
+		outline: none;
+		color: inherit;
+		border-bottom: 1px solid rgba(187, 190, 196, 0.8);
+	}
+
+	&__link:hover {
+		font-weight: bold;
+	}
+
+	&__link:focus {
+		outline: rgb(59, 153, 252) auto 5px;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+	}
+
+	&::before {
+		content: '';
+    	display: inline-block;
+    	top: 50%;
+		transform: translateY(-50%);
+    	left: -30px;
+    
+    	height: 20px;
+    	width: 20px;
+
+    	background-color: $bgColor;
+    
+    	border: 2px solid $borderColor;   
+	}
+
+	&::after {
+		content: $checkboxImage;
+		top: 0;
+		left: -23px;
+	}
+
+}
+
+
+
