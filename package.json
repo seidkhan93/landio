@@ -1,0 +1,22 @@
+{
+  "name": "landio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nberkimbayev@bitbucket.org/yellowteamid/landio.git"
+  },
+  "author": "Yellow Team",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yellowteamid/landio#readme"
+}
