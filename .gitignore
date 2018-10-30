@@ -1,3 +1,5 @@
 .DS_Store
-.sass-cache/
-.style.css
+.sass-cache
+.gulp-scss-cache
+style.css
+node_modules
