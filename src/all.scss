@@ -1,5 +1,6 @@
 @import "reset";
-@import "bootstrap-grid";
+
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "button";
-@import "inputs";
+@import "input";
 @import "checkbox";

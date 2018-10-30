@@ -1,12 +1,4 @@
-$textImage: url('src/icons/inputs/name.svg');
-$emailImage: url('src/icons/inputs/email.svg');
-$passwordImage: url('src/icons/inputs/password.svg');
-$checkboxImage: url('src/icons/inputs/check.svg');
-
-$bgColor: #ffffff;
-$textColor: #424753;
-$borderColor: #e0e0e5;
-$focusColor: #8779bd;
+@import "variables";
 
 .checkbox {
     &__input + &__label::after {
@@ -49,7 +41,7 @@ $focusColor: #8779bd;
             height: 20px;
             width: 20px;
 
-            background-color: $bgColor;
+            background-color: $colorWhite;
         
             border: 2px solid $borderColor;   
         }

@@ -1,7 +1,4 @@
-$colorPrimary: #ffffff;
-$colorSecondary: #6c59b4;
-$colorAnimation: #f2d9e6;
-$buttonIcon: "src/button__icon.svg";
+@import "variables";
 
 .button {
     outline: none;
@@ -21,13 +18,13 @@ $buttonIcon: "src/button__icon.svg";
     }
 
     &_primary{
-        color: $colorPrimary;
-        border-color: $colorPrimary;
+        color: $colorWhite;
+        border-color: $colorWhite;
     }
 
     &_secondary{
         background-color: $colorSecondary;
-        color: $colorPrimary;
+        color: $colorWhite;
         border-color: $colorSecondary;
     }
 
@@ -41,7 +38,7 @@ $buttonIcon: "src/button__icon.svg";
         padding-right: 41px;
         text-align: right;
         background: {
-            image: url($buttonIcon);
+            image: $buttonImage;
             repeat: no-repeat;
             position: 36px center;
         }

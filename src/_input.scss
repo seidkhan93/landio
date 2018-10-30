@@ -1,12 +1,4 @@
-$textImage: url('src/icons/inputs/name.svg');
-$emailImage: url('src/icons/inputs/email.svg');
-$passwordImage: url('src/icons/inputs/password.svg');
-$checkboxImage: url('src/icons/inputs/check.svg');
-
-$bgColor: #ffffff;
-$textColor: #424753;
-$borderColor: #e0e0e5;
-$focusColor: #8779bd;
+@import "variables";
 
 .input {
 	position: relative;
@@ -21,7 +13,7 @@ $focusColor: #8779bd;
 	font-weight: normal;
 	vertical-align: middle;
 
-	background-color: $bgColor;
+	background-color: $colorWhite;
 	background: {
 		position: 17px center;
 		repeat: no-repeat;
