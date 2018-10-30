@@ -18,3 +18,10 @@ npm run dev
   
 This will run Gulp in watch mode.  
   
+## Production Build  
+  
+```sh
+npm run build
+```
+    
+This will build production prefixed version of `style.css`.  
