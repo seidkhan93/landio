@@ -1,4 +1,4 @@
-$nameImage: url('src/icons/inputs/name.svg');
+$textImage: url('src/icons/inputs/name.svg');
 $emailImage: url('src/icons/inputs/email.svg');
 $passwordImage: url('src/icons/inputs/password.svg');
 $checkboxImage: url('src/icons/inputs/check.svg');
@@ -32,8 +32,8 @@ $focusColor: #8779bd;
 
 	transition: border-color 250ms;
 
-	&_name {
-		background-image: $nameImage;
+	&_text {
+		background-image: $textImage;
 	}
 
 	&_email {
@@ -54,30 +54,56 @@ $focusColor: #8779bd;
 }
 
 .checkbox {
-	opacity: 0;
-	margin: 0;
-	margin-left: 13px;
-
-	& + .custom::after {
+	&__input + &__label::after {
 		content: none;
 	}
 
-	&:checked + .custom::after {
+	&__input:checked + &__label:after {
 		content: $checkboxImage;
 	}
 
-	&:focus + .custom::before {
+	&__input:focus + &__label::before {
 		outline: rgb(59, 153, 252) auto 5px;
 	}
-}
 
-.custom {
-	position: relative;
-	font-family: inherit;
-	font-size: 15px;
-	line-height: 18px;
+	&__input {
+		opacity: 0;
+		margin-left: 11px;
+	}
 
-	color: rgba(66, 71, 83, 0.8);
+	&__label {
+		position: relative;
+		font-family: inherit;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: rgba(66, 71, 83, 0.8);
+		&::before,
+		&::after {
+			position: absolute;
+		}
+		
+		&::before {
+			content: '';
+	    	display: inline-block;
+	    	top: 50%;
+			transform: translateY(-50%);
+	    	left: -30px;
+	    
+	    	height: 20px;
+	    	width: 20px;
+
+	    	background-color: $bgColor;
+	    
+	    	border: 2px solid $borderColor;   
+		}
+
+		&::after {
+			content: $checkboxImage;
+			top: 2px;
+			left: -25px;
+		}
+	}
 
 	&__link {
 		text-decoration: none;
@@ -86,41 +112,11 @@ $focusColor: #8779bd;
 		border-bottom: 1px solid rgba(187, 190, 196, 0.8);
 	}
 
-	&__link:hover {
-		font-weight: bold;
-	}
-
 	&__link:focus {
 		outline: rgb(59, 153, 252) auto 5px;
 	}
-
-	&::before,
-	&::after {
-		position: absolute;
-	}
-
-	&::before {
-		content: '';
-    	display: inline-block;
-    	top: 50%;
-		transform: translateY(-50%);
-    	left: -30px;
-    
-    	height: 20px;
-    	width: 20px;
-
-    	background-color: $bgColor;
-    
-    	border: 2px solid $borderColor;   
-	}
-
-	&::after {
-		content: $checkboxImage;
-		top: 0;
-		left: -23px;
-	}
-
 }
+
 
 
 
