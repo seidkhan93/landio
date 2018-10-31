@@ -36,7 +36,10 @@
     }
 
     &__text {
-
+        font-size: 28px;
+        line-height: 41px;
+        text-align: center;
+        color:$colorWhite;
         margin: {
             top: 6.7px;
             bottom:11.3px;
@@ -44,6 +47,8 @@
 
         &_name {
             position: relative;
+            font-size: 16px;
+            line-height: 19px;
 
             &::after {
                content: ''; 
