@@ -1,5 +1,6 @@
 const tabsContainer = $(".tabs");
 const contPath = ".tabs__content";
+const elementPath = ".tabs__img";
 var dict = [
     {
         id:   1,

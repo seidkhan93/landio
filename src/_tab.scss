@@ -78,11 +78,15 @@
     }
 
     &__input {
-        display: none;
+        display: none;   
+    }
+
+    &__input:checked + &__label {
+        opacity: 1;  
     }
 
     &__label {
-
+        opacity: .5;
     }
 
     &__img {
