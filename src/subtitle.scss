@@ -1,7 +1,9 @@
+@import "variables";
+
 .subtitle{
 		font-size: 16px;
 		line-height: 32px;
-		color: #424753;
+		color: $textColor;
 
 		&_slider{
 		    line-height: 19px;
@@ -13,7 +15,7 @@
 		}
 
 		&_bright{
-				color: #ffffff;
+			color: $colorWhite;
 		}		
 }
 			
