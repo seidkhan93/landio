@@ -7,7 +7,7 @@ $twitterIcon: url('stylesheets/icons/twitter.svg');
 $facebookIcon: url('stylesheets/icons/facebook.svg');
 $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 
-
+// Main hero
 .action {
 	position: relative;
 	min-height: 100vh;
@@ -41,19 +41,12 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	}
 
 	&__header {
+		display: flex;
 		padding: 45px 0 20px;
 	}
 
-	&__logo {
-
-	}
-
-	&__nav {
-
-	}
-	
 	&__slogan {
-		padding-top: 20%;
+		padding-top: 15%;
 		text-align: center;
 	}
 
@@ -66,6 +59,14 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	}
 }
 
+// Logo component
+.logo {
+	&__img {
+		
+	}
+}
+
+// Socials block component
 .socials {
 	display: block;
 	text-align: center;
@@ -116,12 +117,14 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 			content: $linkedInIcon;
 		}
 	}
-
 }
 
-
-
-
+// Nav component
+.nav {
+	display: flex;
+	align-items: center;
+}
+	
 
 
 
