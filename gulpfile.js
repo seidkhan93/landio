@@ -9,7 +9,7 @@ sass.compiler = require('node-sass');
 gulp.task('scss', function () {
     return gulp.src([
         './src/all.scss',
-        './main.scss',
+        './stylesheets/main.scss',
     ])
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
@@ -23,7 +23,7 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('scss:watch', function () {
-    gulp.watch(['./src/*.scss', './main.scss'], [ 'scss' ]);
+    gulp.watch(['./src/*.scss', './stylesheets/main.scss'], [ 'scss' ]);
 });
 
 gulp.task('default', [ 'scss', 'scss:watch' ]);
