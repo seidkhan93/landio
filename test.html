@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Test!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
@@ -31,5 +32,35 @@
 		</div>
 
 	</form>
+	<!-- Tabs test start-->
+	<div class="tabs">
+        <div class="tabs__content tabs__content_0"></div>
+        <div class="tabs__content tabs__content_1"></div>   
+        <div class="tabs__content  tabs__content_2"></div>  
+        <div class="tabs__nav">
+            <div class="tabs__element">
+                <input type="radio" class="tabs__input" id="0" name="tab" aria-hidden="true" data-id="0">
+                <label for="0" class="tabs__label">
+                    <img class="tabs__img" src="src/icons/tabs/0.jpg">
+                </label>
+            </div>
+            <div class="tabs__element">
+                <input type="radio" class="tabs__input" id="1" name="tab" aria-hidden="true" data-id="1">
+                <label for="1" class="tabs__label">
+                    <img  class="tabs__img" src="src/icons/tabs/1.jpg">
+                </label>
+            </div>
+            <div class="tabs__element">
+                <input type="radio" class="tabs__input" id="2" name="tab" aria-hidden="true" data-id="2">
+                <label for="2" class="tabs__label">
+                    <img class="tabs__img" src="src/icons/tabs/2.jpg">
+                </label>
+            </div>
+        </div>    
+    </div> <!-- Tabs test end-->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery-->
+    <script src="src/tab.js"></script> <!-- Tabs js-->
+
 </body>
 </html>

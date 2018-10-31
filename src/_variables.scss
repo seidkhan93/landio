@@ -6,6 +6,9 @@ $colorAnimation: #f2d9e6;
 $textColor: #424753;
 $borderColor: #e0e0e5;
 $focusColor: #8779bd;
+$tabsColorFirst: rgba(50, 46, 62, 0.56);
+$tabsGradient: linear-gradient(200.09deg, #2B8BE3 6.12%, #663FB5 90.47%); 
+$tabsColorSecond: #F6F7F8;
 
 // Icons
 $buttonImage: url('src/icons/buttons/button__icon.svg');
@@ -14,4 +17,5 @@ $textImage: url('src/icons/inputs/name.svg');
 $emailImage: url('src/icons/inputs/email.svg');
 $passwordImage: url('src/icons/inputs/password.svg');
 $checkboxImage: url('src/icons/inputs/check.svg');
+$tabsBackgroundImage: url("src/icons/tabs/background.png");
 
