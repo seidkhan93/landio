@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+
+$mainBgColor: rgba(234, 238, 243, 0.2);
+$colorWhite: #ffffff;
+
+$bgImage: url('stylesheets/images/action-bg.png');
+$bgMask: url('stylesheets/images/action-mask.png');
+$twitterIcon: url('stylesheets/icons/twitter.svg');
+$facebookIcon: url('stylesheets/icons/facebook.svg');
+$linkedInIcon: url('stylesheets/icons/linkedin.svg');
+
+
+.action {
+	position: relative;
+	min-height: 100vh;
+	max-height: 1600px;
+	
+	background: $mainBgColor 
+	            linear-gradient(200deg, rgba(43, 139, 227, 0.8) 6.12%, rgba(102, 63, 181, 0.8) 90.47%)
+				center;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&::before { 
+		background: $mainBgColor $bgMask no-repeat center;
+		background-size: cover;
+		opacity: 0.5;
+		z-index: -10;
+	}
+
+	&::after {
+		background: rgba(255, 255, 255, 0.5) $bgImage no-repeat center;
+		background-size: cover;
+		z-index: -100;
+	}
+
+	&__header {
+		padding: 45px 0 20px;
+	}
+
+	&__logo {
+
+	}
+
+	&__nav {
+
+	}
+	
+	&__slogan {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 17px;
+	}
+
+	&__subtitle {
+		margin-bottom: 62px;
+	}
+
+	&__socials {
+		position: absolute;
+		bottom: 37px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.socials {
+	&__item {
+		padding: 5px 16px;
+		border-right: 2px solid rgba(255,255,255,.25);
+	}
+
+	&__item:last-child {
+		border-right: none;
+	}
+
+	&__link {
+		font-family: inherit;
+		font-size: 13px;
+		line-height: 13px;
+		font-weight: 400;
+		vertical-align: middle;
+
+		color: $colorWhite;
+		text-decoration: none;
+
+		&::before {
+			margin-right: 2px;
+			vertical-align: middle;
+		}
+
+		&_twitter::before {
+			content: $twitterIcon;
+		}
+
+		&_facebook::before {
+			content: $facebookIcon;
+		}
+
+		&_linkedin::before {
+			content: $linkedInIcon;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
