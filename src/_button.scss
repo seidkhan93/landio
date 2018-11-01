@@ -17,15 +17,34 @@
         radius: 40px;
     }
 
+    
+    &:hover {
+        background-color: gray;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $colorAnimation;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
     &_primary{
         color: $colorWhite;
         border-color: $colorWhite;
     }
 
     &_secondary{
-        background-color: $colorSecondary;
-        color: $colorWhite;
+
+        background-color: $colorWhite;
+        color: inherit;
         border-color: $colorSecondary;
+
+        &:hover {
+            background-color: $colorSecondary;
+            color: $colorWhite;
+            border-color: $colorSecondary;
+        }
     }
 
     &_alternative{
@@ -42,17 +61,6 @@
             repeat: no-repeat;
             position: 36px center;
         }
-    }
-
-    &:hover {
-        background-color: #f2d9e6;
-    }
-
-    &:active,
-    &:focus {
-        background-color: $colorAnimation;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
     }
 }
 
