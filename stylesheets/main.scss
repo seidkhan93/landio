@@ -7,6 +7,12 @@ $twitterIcon: url('stylesheets/icons/twitter.svg');
 $facebookIcon: url('stylesheets/icons/facebook.svg');
 $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 
+$ratesBgColor: #f4f5f7;
+$ratesFirstColor: #eceff3;
+$ratesSecondColor: #9183c7;
+$ratesThirdColor: rgba(66, 71, 83, 0.8);
+$ratedLineColor: #ededef;
+
 // Main hero
 .action {
 	position: relative;
@@ -125,6 +131,7 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	align-items: center;
 }
 
+<<<<<<< HEAD
 //feedback 
 .feedback {
 	background: $colorGrey;
@@ -149,7 +156,130 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	}
 
 }
+=======
+// Rates compontent
+.rate {
+	display: block;
+	padding: 90px 0px;
 
+	text-align: center; //delete soon...and add text-center class for .rates
+
+	background-color: $ratesBgColor;
+
+	&__title {
+		margin-bottom: 110px;
+	}
+}
+
+%bottom-line {
+	border-bottom: 1px solid $ratedLineColor;
+}
+
+%reset-ul-style {
+	ul,
+	ul li {
+	   margin:0;
+	   padding: 0;
+	   text-indent: 0;
+	   list-style-type: 0;
+	}
+}
+
+.tariff {
+	display: block;
+	min-height: 524px;
+	height: auto;
+	vertical-align: middle;
+	
+	background-color: $colorWhite;
+	border: 1px solid $ratesFirstColor;
+	border-radius: 5px;
+
+	&_active {
+		position: relative;
+		z-index: 10;
+		border-color: $ratesSecondColor;
+		transform: scale(1.2);
+		transition: transform .5s;
+	}
+
+	&_active &__title {
+		color: $colorWhite;
+		background-color: $ratesSecondColor;
+	}
+
+	&__title {
+		display: block;
+		padding-top: 19px;
+		padding-bottom: 16px;
+
+		font-family: inherit;
+		font-size: 13px;
+		line-height: 15px;
+>>>>>>> master
+
+		color: $ratesThirdColor;
+		background-color: $ratesFirstColor;
+
+		border-radius: 2px 2px 0 0;
+	}
+
+	&__content {
+		display: block;
+		padding: 30px 25px;
+	}
+
+	&__price {
+		display: block;
+		position: relative;
+		padding-bottom: 5px;
+		margin-bottom: 26px;
+
+		font-family: inherit;
+		font-size: 68px;
+		line-height: 1.5;
+		color: inherit;
+
+		@extend %bottom-line;
+
+		&::before { 
+			content: '$';
+			margin-right: 5px;
+
+			font-family: inherit;
+			font-size: 28px;
+			line-height: 33px;
+
+			color: inherit;
+		};
+
+		&::after {
+			content: '/MONTH';
+			position: relative;
+			bottom: -15px;
+			
+			font-family: inherit;
+			font-size: 13px;
+
+			color: $ratesThirdColor;
+		}
+
+	}
+
+	&__list {
+		@extend %reset-ul-style;
+
+		display: block;
+		margin-bottom: 60px; //delete soon...and add utilities margin-b class for .rates
+	}
+
+	&__item {
+		@extend %bottom-line;
+
+		display: block;
+		padding: 20px 0 10px;
+	}
+}
 
 
 
