@@ -1,20 +1,20 @@
 @import "variables";
 
-.subtitle{
+.subtitle {
 	font-size: 16px;
 	line-height: 32px;
 	color: $textColor;
 
-	&_slider{
+	&_slider {
 	  line-height: 19px;
-	}w
+	}
 
-	&_big{
+	&_big {
 	   font-size: 26px;
 	   line-height: 30px;
 	}
 
-	&_bright{
+	&_bright {
 		color: $colorWhite;
 	}		
 }
