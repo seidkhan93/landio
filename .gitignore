@@ -2,4 +2,5 @@
 .sass-cache
 .gulp-scss-cache
 style.css
+style.map.css
 node_modules

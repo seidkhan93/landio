@@ -175,16 +175,6 @@ $ratedLineColor: #ededef;
 	border-bottom: 1px solid $ratedLineColor;
 }
 
-%reset-ul-style {
-	ul,
-	ul li {
-	   margin:0;
-	   padding: 0;
-	   text-indent: 0;
-	   list-style-type: 0;
-	}
-}
-
 .tariff {
 	display: block;
 	min-height: 524px;
@@ -267,8 +257,6 @@ $ratedLineColor: #ededef;
 	}
 
 	&__list {
-		@extend %reset-ul-style;
-
 		display: block;
 		margin-bottom: 60px; //delete soon...and add utilities margin-b class for .rates
 	}
