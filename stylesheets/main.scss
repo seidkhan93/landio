@@ -130,7 +130,7 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	background: $colorGrey;
 	min-height: 392px;
 	display: block;
-	
+
 	padding: {
 		top: 90px;
 		bottom: 100px;
@@ -144,8 +144,8 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 		margin-bottom: 60px;
 	}
 
-	&_margin {
-		margin-top: 32px;
+	&_distanced_small {
+		margin-bottom: 30px;
 	}
 
 }
