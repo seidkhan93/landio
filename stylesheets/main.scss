@@ -1,6 +1,6 @@
 $mainBgColor: rgba(234, 238, 243, 0.2);
 $colorWhite: #ffffff;
-
+$colorGrey: #f4f5f7;
 $bgImage: url('stylesheets/images/action-bg.png');
 $bgMask: url('stylesheets/images/action-mask.png');
 $twitterIcon: url('stylesheets/icons/twitter.svg');
@@ -124,7 +124,31 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	display: flex;
 	align-items: center;
 }
+
+//feedback 
+.feedback {
+	background: $colorGrey;
+	min-height: 392px;
+	display: block;
 	
+	padding: {
+		top: 90px;
+		bottom: 100px;
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&_distanced {
+		margin-bottom: 60px;
+	}
+
+	&_margin {
+		margin-top: 32px;
+	}
+
+}
 
 
 
