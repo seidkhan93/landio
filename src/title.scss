@@ -1,0 +1,22 @@
+@import "variables";
+
+.title {
+	font-size: 28px;
+	line-height: 33px;
+	color: $textColor;
+
+	&_bright {
+		color: $colorWhite;
+	}
+
+	&_big {
+		font-size: 80px;
+		line-height: 94px;
+	}
+
+	&_slider {
+		line-height: 33px;
+	}
+}
+
+
