@@ -17,7 +17,7 @@ var dict = [
     {
         id:   3,
         name: "Tachikoma",
-        text: "“Yeah! And you know that 'existence of God' thing that I had trouble understanding before? I think I am starting to understand it now. Maybe, just maybe, it's a concept that's similar to a zero in mathematics. In other words, it's a symbol that denies the absence of meaning, the meaning that's necessitated by the delineation of one system from another. In analog, that's God. In digital, it's zero.”",
+        text: "“Yeah! And you know that 'existence of God' thing that I had trouble understanding before? I think I am starting to understand it now. Maybe, just maybe, it's a concept that's similar to a zero in mathematics. In analog, that's God. In digital, it's zero.”",
         img: "src/icons/tabs/2.jpg"
     }
 ]; 
