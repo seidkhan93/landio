@@ -6,29 +6,7 @@
     font-family: inherit;
     min-height: 500px;
 
-    background: {
-        color: $tabsColorFirst;
-        image: $tabsGradient;
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
-
-        background: {
-            color: $tabsColorSecond;
-            image: $tabsBackgroundImage;
-            size: cover;
-            repeat: no-repeat;
-            position: center;
-        }
-    }
+   
 
     &__content {
         display: block;
@@ -70,6 +48,7 @@
 
     &__nav {
         display: flex;
+        align-items: center;
         position: absolute;
         justify-content: center;
         left: 50%;
@@ -86,27 +65,35 @@
         display: none;   
     }
 
-    &__input:checked + &__label {
-        opacity: 1;  
-    }
-
     &__label {
         opacity: .5;
     }
 
+    &__input:checked + &__label {
+        opacity: 1;
+    }
+
+    &__input:checked + &__label &__img {
+        width: 70px;
+        height: 70px;
+    }
+
+
     &__img {
         border-radius: 50%;
-        max-width: 70px;
-        max-height: 70px;
+        width: 50px;
+        height: 50px;
 
         margin: {
             left: 7px;
             left: 7px;
         }
 
+        transition: all 150ms;
+
         &_content {
-            max-width: 100px;
-            max-height: 100px;
+            width: 100px;
+            height: 100px;
             margin-top: 90px;
         }
     }

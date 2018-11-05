@@ -6,12 +6,16 @@ $bgMask: url('stylesheets/images/action-mask.png');
 $twitterIcon: url('stylesheets/icons/twitter.svg');
 $facebookIcon: url('stylesheets/icons/facebook.svg');
 $linkedInIcon: url('stylesheets/icons/linkedin.svg');
+$tabsBackgroundImage: url("stylesheets/icons/background-tabs.png");
 
 $ratesBgColor: #f4f5f7;
 $ratesFirstColor: #eceff3;
 $ratesSecondColor: #9183c7;
 $ratesThirdColor: rgba(66, 71, 83, 0.8);
 $ratedLineColor: #ededef;
+$tabsColorFirst: rgba(50, 46, 62, 0.56);
+$tabsGradient: linear-gradient(200.09deg, #2B8BE3 6.12%, #663FB5 90.47%); 
+$tabsColorSecond: #F6F7F8;
 
 // Main hero
 .action {
@@ -323,9 +327,32 @@ $imgMaxWidth: 1440px;
 	}
 }
 
+//review 
+.review {
+	 background: {
+        color: $tabsColorFirst;
+        image: $tabsGradient;
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
 
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
 
-
+        background: {
+            color: $tabsColorSecond;
+            image: $tabsBackgroundImage;
+            size: cover;
+            repeat: no-repeat;
+            position: left bottom;
+        }
+    }
+}
 
 
 
