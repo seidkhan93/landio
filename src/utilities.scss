@@ -1,9 +1,53 @@
 .text-center {
-	text-align: center;
+	text-align: center !important;
 }
 
 .p-0 {
-	padding: 0;
+	padding: 0 !important;
+}
+
+.p-left-110 {
+	padding-left: 110px !important;
+}
+
+@media (min-width: 576px) {
+  	.p-sm-0 {
+    	padding: 0 !important;
+  	}
+	
+	.p-left-sm-110 {
+		padding-left: 110px !important;
+	}
+}
+
+@media (min-width: 768px) {
+  	.p-md-0 {
+    	padding: 0 !important;
+  	}
+
+  	.p-left-md-110 {
+		padding-left: 110px !important;
+	}
+}
+
+@media (min-width: 992px) {
+  	.p-lg-0 {
+    	padding: 0 ;
+  	}
+
+  	.p-left-lg-110 {
+		padding-left: 110px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+  	.p-xl-0 {
+    	padding: 0 ;
+  	}
+
+  	.p-left-xl-110 {
+		padding-left: 110px !important;
+	}
 }
 
 @media (min-width: 576px) {
