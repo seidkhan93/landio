@@ -62,6 +62,17 @@
             position: 36px center;
         }
     }
+
+    &_active {
+        background-color: $colorSecondary;
+        color: $colorWhite;
+        border-color: $colorSecondary;   
+
+        &:hover {
+            background-color: $colorHover;
+            border-color: $colorHover;
+        }     
+    }
 }
 
 

@@ -330,6 +330,8 @@ $imgMaxWidth: 1440px;
 
 //review 
 .review {
+	position: relative;
+
 	 background: {
         color: $tabsColorFirst;
         image: $tabsGradient;
