@@ -22,11 +22,11 @@ $ratesSecondColor: #9183c7;
 $ratesThirdColor: rgba(66, 71, 83, 0.8);
 $ratedLineColor: #ededef;
 $tabsColorFirst: rgba(50, 46, 62, 0.56);
-$tabsGradient: linear-gradient(200.09deg, #2B8BE3 6.12%, #663FB5 90.47%); 
+$tabsGradient: linear-gradient(200.09deg, #2B8BE3 6.12%, #663FB5 90.47%);
 $tabsColorSecond: #F6F7F8;
 
 /* News */
-$pullColor: #4888D0; 
+$pullColor: #4888D0;
 $bgColor: #312F38;
 $imgMaskColor: rgba(255, 255, 255, 0.6);
 
@@ -35,8 +35,8 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	position: relative;
 	min-height: 100vh;
 	max-height: 1000px;
-	
-	background: $mainBgColor 
+
+	background: $mainBgColor
 	            linear-gradient(200deg, rgba(43, 139, 227, 0.8) 6.12%, rgba(102, 63, 181, 0.8) 90.47%)
 				center;
 
@@ -50,7 +50,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 		height: 100%;
 	}
 
-	&::before { 
+	&::before {
 		background: $mainBgColor $bgMask no-repeat center;
 		background-size: cover;
 		opacity: 0.5;
@@ -85,7 +85,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 // Logo component
 .logo {
 	&__img {
-		
+
 	}
 }
 
@@ -149,7 +149,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 }
 
 
-//feedback 
+//feedback
 .feedback {
 	background: $colorGrey;
 	min-height: 392px;
@@ -165,11 +165,11 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	}
 
 	&_distanced {
-		margin-bottom: 60px;
+		margin-bottom: 32px;
 	}
 
 	&_distanced_small {
-		margin-bottom: 30px;
+		margin-bottom: 16px;
 	}
 
 }
@@ -197,7 +197,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	min-height: 524px;
 	height: auto;
 	vertical-align: middle;
-	
+
 	background-color: $colorWhite;
 	border: 1px solid $ratesFirstColor;
 	border-radius: 5px;
@@ -249,7 +249,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 
 		@extend %bottom-line;
 
-		&::before { 
+		&::before {
 			content: '$';
 			margin-right: 5px;
 
@@ -264,7 +264,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 			content: '/MONTH';
 			position: relative;
 			bottom: -15px;
-			
+
 			font-family: inherit;
 			font-size: 13px;
 
@@ -301,25 +301,25 @@ $imgMaxWidth: 100%;
     }
 
     &__ui {
-        text-align: center; 
+        text-align: center;
         border-bottom: 1px solid #ededef;
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
 
     &__element {
-        display: inline-block; 
-        height: 100px; 
-        border: 5px solid rgba(66, 71, 83, 0.1); 
-        border-radius: 100%; 
-        padding: 20px 22px; 
+        display: inline-block;
+        height: 100px;
+        border: 5px solid rgba(66, 71, 83, 0.1);
+        border-radius: 100%;
+        padding: 20px 22px;
         width: 100px;
     }
 
     &__quantity {
-        font-weight: 400; 
-        line-height: 42px; 
-        color: $color; 
+        font-weight: 400;
+        line-height: 42px;
+        color: $color;
         font-size: 36px;
     }
 }
@@ -334,31 +334,13 @@ $imgMaxWidth: 100%;
     }
 
     &_fixed-height {
-        position: relative; 
-        height: 500px; 
+        position: relative;
+        height: 500px;
         background: $bgColorBenefits;
 	}
 }
 
-.col {
-    &_bottom-padding {
-        padding-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .row_fixed-height {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .row_fixed-height {
-        height: 400px;
-    }
-}
-
-//review 
+//review
 .review {
 	position: relative;
 	background: {
@@ -401,6 +383,10 @@ $imgMaxWidth: 100%;
 .mustread {
 	display: block;
 	padding: 90px 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> de77da031d2ce8efa04f5c6564cbe67a3b9e0cad
 	background-color: $colorWhite;
 
 	&__header {
@@ -481,7 +467,7 @@ $imgMaxWidth: 100%;
 		}
 
 		&:hover &::after {
-			margin-left: 20px;	
+			margin-left: 20px;
 		}
 	}
 
@@ -513,4 +499,8 @@ $imgMaxWidth: 100%;
 			margin-left: 0;
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> de77da031d2ce8efa04f5c6564cbe67a3b9e0cad
