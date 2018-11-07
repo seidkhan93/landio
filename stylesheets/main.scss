@@ -330,29 +330,29 @@ $imgMaxWidth: 1440px;
 
 .review {
 	position: relative;
-	 background: {
-        color: $tabsColorFirst;
-        image: $tabsGradient;
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
+	background: {
+	    color: $tabsColorFirst;
+	    image: $tabsGradient;
+	    size: cover;
+	    repeat: no-repeat;
+	    position: center;
+	}
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
+  &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
 
-        background: {
-            color: $tabsColorSecond;
-            image: $tabsBackgroundImage;
-            size: cover;
-            repeat: no-repeat;
-            position: left bottom;
-        }
-    }
+      background: {
+          color: $tabsColorSecond;
+          image: $tabsBackgroundImage;
+          size: cover;
+          repeat: no-repeat;
+          position: left bottom;
+      }
+  }
 }
 
 .footer {
@@ -360,7 +360,8 @@ $imgMaxWidth: 1440px;
 		min-height: 200px;
 		padding: 85px 0 75px;
 		background: $colorOfFooter;
-	  &__info{
+
+	  &__info {
 	  		color: $colorWhite;
 	  }
 }
