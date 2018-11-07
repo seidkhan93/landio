@@ -50,3 +50,16 @@
 	}
 }
 
+@media (min-width: 576px) {
+   .mb-sm-30 {
+     margin-bottom: 30px;
+   }
+
+   .mb-sm-60 {
+     margin-bottom: 60px;
+   }
+
+   .text-left-sm {
+       text-align: left;
+   }
+}
