@@ -356,27 +356,11 @@ $imgMaxWidth: 1440px;
 }
 
 .footer {
-	min-height: 200px;
-	max-height: 1000px;
-	background: $colorOfFooter;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 230px;
-
-  &_info{
-  	color: $colorWhite;
-  }
+		display: block;
+		min-height: 200px;
+		padding: 85px 0 75px;
+		background: $colorOfFooter;
+	  &__info{
+	  		color: $colorWhite;
+	  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
