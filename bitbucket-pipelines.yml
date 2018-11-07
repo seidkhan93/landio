@@ -1,0 +1,15 @@
+image: node:6.9.4
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - npm install
+          - npm test
+    - step:
+        name: Deploy to test
+        deployment: test
+        script:
+          - echo "Deploying to test environment"

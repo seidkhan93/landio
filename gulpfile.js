@@ -19,7 +19,7 @@ gulp.task('scss', function () {
 gulp.task('autoprefixer', function () {
     return gulp.src('./style.css')
         .pipe(postcss([ autoprefixer() ]))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./build/'));
 });
 
 gulp.task('scss:watch', function () {
