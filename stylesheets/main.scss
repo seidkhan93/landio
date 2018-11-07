@@ -289,7 +289,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 //benefits
 $color: #424753;
 $bgColorBenefits: #f4f5f7;
-$imgMaxWidth: 1440px;
+$imgMaxWidth: 100%;
 
 .benefits {
     &__device {
@@ -330,7 +330,7 @@ $imgMaxWidth: 1440px;
     }
 
     &_bottom-padding {
-        padding-bottom: 70px;
+        padding-bottom: 15px;
     }
 
     &_fixed-height {
@@ -340,6 +340,28 @@ $imgMaxWidth: 1440px;
 	}
 }
 
+<<<<<<< HEAD
+=======
+.col {
+    &_bottom-padding {
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row_fixed-height {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row_fixed-height {
+        height: 400px;
+    }
+}
+
+//review 
+>>>>>>> 00358173a00dd27e81f9df13ab90d82b0341d5a6
 .review {
 	position: relative;
 	background: {
@@ -397,19 +419,14 @@ $imgMaxWidth: 1440px;
 
 .news {
 	display: block;
-
-	&__item {
-		min-height: 400px;
-	}
-
 	&__img {
 		position: relative;
-		height: 100%;
+		min-height: 400px;
 
 		background-color: $tabsColorSecond;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 130%;
+		background-size: cover;
 
 		&::before {
 			content: '';
@@ -431,9 +448,9 @@ $imgMaxWidth: 1440px;
 			background-image: $secondNewsImg;
 		}
 	}
+
 	&__post {
-		height: 100%;
-		padding-left: 110px;
+		min-height: 400px;
 
 		background-color: $bgColor;
 	}
@@ -459,7 +476,7 @@ $imgMaxWidth: 1440px;
 		display: block;
 		margin-bottom: 7px;
 		cursor: pointer;
-		max-width: 34ch;
+		max-width: 30ch;
 		color: $colorWhite;
 
 		&::after {
