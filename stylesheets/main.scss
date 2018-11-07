@@ -288,7 +288,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 //benefits
 $color: #424753;
 $bgColorBenefits: #f4f5f7;
-$imgMaxWidth: 1440px;
+$imgMaxWidth: 100%;
 
 .benefits {
     &__device {
@@ -329,7 +329,7 @@ $imgMaxWidth: 1440px;
     }
 
     &_bottom-padding {
-        padding-bottom: 70px;
+        padding-bottom: 15px;
     }
 
     &_fixed-height {
@@ -337,6 +337,12 @@ $imgMaxWidth: 1440px;
         height: 500px; 
         background: $bgColorBenefits;
 	}
+}
+
+.col{
+    &_bottom-padding {
+        padding-bottom: 15px;
+    }
 }
 
 //review 
