@@ -1,6 +1,7 @@
 $mainBgColor: rgba(234, 238, 243, 0.2);
 $colorWhite: #ffffff;
 $colorGrey: #f4f5f7;
+$colorOfFooter: #312F38;
 $bgImage: url('stylesheets/images/action-bg.png');
 $bgMask: url('stylesheets/images/action-mask.png');
 $twitterIcon: url('stylesheets/icons/twitter.svg');
@@ -342,38 +343,45 @@ $imgMaxWidth: 100%;
 
 .review {
 	position: relative;
+	background: {
+	    color: $tabsColorFirst;
+	    image: $tabsGradient;
+	    size: cover;
+	    repeat: no-repeat;
+	    position: center;
+	}
 
-	 background: {
-        color: $tabsColorFirst;
-        image: $tabsGradient;
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
+  &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
-
-        background: {
-            color: $tabsColorSecond;
-            image: $tabsBackgroundImage;
-            size: cover;
-            repeat: no-repeat;
-            position: left bottom;
-        }
-    }
+      background: {
+          color: $tabsColorSecond;
+          image: $tabsBackgroundImage;
+          size: cover;
+          repeat: no-repeat;
+          position: left bottom;
+      }
+  }
 }
 
+.footer {
+		display: block;
+		min-height: 200px;
+		padding: 85px 0 75px;
+		background: $colorOfFooter;
+
+	  &__info {
+	  		color: $colorWhite;
+	  }
+}
 // mustread
 .mustread {
 	display: block;
-
 	padding: 90px 0;
-
 	background-color: $colorWhite;
 
 	&__header {
@@ -486,4 +494,5 @@ $imgMaxWidth: 100%;
 			margin-left: 0;
 		}
 	}
+}
 }
