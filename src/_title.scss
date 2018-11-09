@@ -11,8 +11,8 @@
 	}
 
 		&_big {
-			font-size: 50px;
-			line-height: 64px;
+			font-size: 42px;
+			line-height: 55px;
 		}
 
 	&_slider {
@@ -20,7 +20,7 @@
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 	.title {
 		&_big {
 			font-size: 80px;
