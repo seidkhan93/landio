@@ -1,5 +1,5 @@
 {
-  "name": "landio",
+  "name": "yellowteamid.bitbucket.io",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://nberkimbayev@bitbucket.org/yellowteamid/landio.git"
+    "url": "git+https://nberkimbayev@bitbucket.org/yellowteamid/yellowteamid.bitbucket.io.git"
   },
   "author": "Yellow Team",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/yellowteamid/landio#readme"
+  "homepage": "https://bitbucket.org/yellowteamid/yellowteamid.bitbucket.io#readme"
 }

@@ -37,7 +37,7 @@
 		padding-left: 110px !important;
 	}
 
-	.scale-sm-1-2 {
+	.scale-md-1-2 {
 		transform: scale(1.2) !important;
 	}
 }
@@ -51,7 +51,7 @@
 		padding-left: 110px !important;
 	}
 
-	.scale-sm-1-2 {
+	.scale-lg-1-2 {
 		transform: scale(1.2) !important;
 	}
 }
@@ -65,21 +65,7 @@
 		padding-left: 110px !important;
 	}
 
-	.scale-sm-1-2 {
-		transform: scale(1.2) !important !important;
+	.scale-xl-1-2 {
+		transform: scale(1.2) !important;
 	}
-}
-
-@media (min-width: 576px) {
-   .mb-sm-30 {
-     margin-bottom: 30px;
-   }
-
-   .mb-sm-60 {
-     margin-bottom: 60px;
-   }
-
-   .text-left-sm {
-       text-align: left;
-   }
 }
