@@ -2,19 +2,19 @@ $mainBgColor: rgba(234, 238, 243, 0.2);
 $colorWhite: #ffffff;
 $colorGrey: #f4f5f7;
 $colorOfFooter: #312F38;
-$bgImage: url('stylesheets/images/action-bg.png');
-$bgMask: url('stylesheets/images/action-mask.png');
-$twitterIcon: url('stylesheets/icons/twitter.svg');
-$facebookIcon: url('stylesheets/icons/facebook.svg');
-$linkedInIcon: url('stylesheets/icons/linkedin.svg');
-$tabsBackgroundImage: url("stylesheets/icons/background-tabs.png");
+$bgImage: url('../stylesheets/images/action-bg.png');
+$bgMask: url('../stylesheets/images/action-mask.png');
+$twitterIcon: url('../stylesheets/icons/twitter.svg');
+$facebookIcon: url('../stylesheets/icons/facebook.svg');
+$linkedInIcon: url('../stylesheets/icons/linkedin.svg');
+$tabsBackgroundImage: url("../stylesheets/icons/background-tabs.png");
 
 /* News */
-$tagIcon: url('stylesheets/icons/tag-icon.svg');
-$timeIcon: url('stylesheets/icons/time-icon.svg');
-$firstNewsImg: url('stylesheets/images/news-bg.png');
-$secondNewsImg: url('stylesheets/images/news-bg-2.png');
-$newsArrow: url('stylesheets/icons/arrow.svg');
+$tagIcon: url('../stylesheets/icons/tag-icon.svg');
+$timeIcon: url('../stylesheets/icons/time-icon.svg');
+$firstNewsImg: url('../stylesheets/images/news-bg.png');
+$secondNewsImg: url('../stylesheets/images/news-bg-2.png');
+$newsArrow: url('../stylesheets/icons/arrow.svg');
 
 $ratesBgColor: #f4f5f7;
 $ratesFirstColor: #eceff3;
@@ -92,6 +92,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 // Socials block component
 .socials {
 	display: block;
+	width: 100%;
 	text-align: center;
 	padding-bottom: 37px;
 
@@ -494,5 +495,4 @@ $imgMaxWidth: 100%;
 			margin-left: 0;
 		}
 	}
-}
 }

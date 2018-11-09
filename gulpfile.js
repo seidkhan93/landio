@@ -12,7 +12,7 @@ gulp.task('scss', function () {
         './stylesheets/main.scss',
     ])
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('main.css'))
+        .pipe(concat('./build/main.css'))
         .pipe(gulp.dest('./'));
 });
 
