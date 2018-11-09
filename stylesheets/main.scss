@@ -30,10 +30,9 @@ $pullColor: #4888D0;
 $bgColor: #312F38;
 $imgMaskColor: rgba(255, 255, 255, 0.6);
 
-// Main hero
+// Main
 .action {
 	position: relative;
-	min-height: 100vh;
 	max-height: 1000px;
 
 	background: $mainBgColor
@@ -97,11 +96,13 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	padding-bottom: 37px;
 
 
-	&_absolute {
-		position: absolute;
-		transform: translateX(-50%);
-		left: 50%;
-		bottom: 0;
+	@media (min-width: 576px) {
+		&_absolute {
+			position: absolute;
+			transform: translateX(-50%);
+			left: 50%;
+			bottom: 0;
+		}
 	}
 
 	&__item {
