@@ -1195,6 +1195,9 @@ html {
     background-color: #ffffff;
     color: inherit;
     border-color: #6c59b4; }
+    @media (min-width: 576px) and (max-width: 766px) {
+      .button_secondary {
+        padding: 10px 67px 10px 62px; } }
     .button_secondary:hover {
       background-color: #6c59b4;
       color: #ffffff;

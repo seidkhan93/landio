@@ -16,7 +16,7 @@
         style: solid;
         radius: 40px;
     }
-
+    
 
     &:hover {
         background-color: gray;
@@ -34,11 +34,17 @@
         border-color: $colorWhite;
     }
 
-    &_secondary{
+    &_secondary {
 
         background-color: $colorWhite;
         color: inherit;
         border-color: $colorSecondary;
+
+        @media (min-width: 576px) and (max-width: 766px) {
+            & {
+                padding: 10px 67px 10px 62px;
+            }
+        }
 
         &:hover {
             background-color: $colorSecondary;
