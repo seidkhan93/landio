@@ -23,7 +23,7 @@
 }
 
 .h-100 {
-    height: 100vh;
+    height: 100vh !important;
 }
 
 @media (min-width: 576px) {
@@ -52,17 +52,17 @@
    }
 
    .tabs__text_sm {
-       font-size: 16px; //28
-       line-height: 32px; //41
+       font-size: 16px !important; //28
+       line-height: 32px !important; //41
 
    }
 
    .tabs_sm {
-       min-height: 500px;
+       min-height: 500px !important;
    }
 
    .h-sm-100 {
-        height: 100vh;
+        height: 100vh !important;
     }
 }
 
@@ -78,6 +78,11 @@
 	.scale-md-1-2 {
 		transform: scale(1.2) !important;
 	}
+
+
+    .h-md-100 {
+        height: 100vh !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -94,17 +99,22 @@
 	}
 
     .tabs_lg {
-        min-height: 500px;
+        min-height: 500px !important;
     }
 
     .tabs__text_lg {
-        font-size: 28px; //28
-        line-height: 41px; //41
+        font-size: 28px !important; //28
+        line-height: 41px !important; //41
 
     }
 
     .text-left-lg {
         text-align: left !important;
+    }
+
+
+    .h-lg-100 {
+        height: 100vh !important;
     }
 }
 
@@ -120,4 +130,9 @@
 	.scale-xl-1-2 {
 		transform: scale(1.2) !important;
 	}
+
+
+    .h-xl-100 {
+        height: 100vh !important;
+    }
 }
