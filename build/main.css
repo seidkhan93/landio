@@ -1170,7 +1170,7 @@ html {
 
 .button {
   outline: none;
-  padding: 23px 70px 21px 70px;
+  padding: 23px 67px 21px 62px;
   text-align: center;
   font-family: inherit;
   font-size: 13px;
@@ -1220,7 +1220,6 @@ html {
 .input {
   position: relative;
   width: 100%;
-  max-width: 263px;
   height: 60px;
   padding: 15px 20px 15px 70px;
   font-family: inherit;
@@ -1413,8 +1412,8 @@ html {
   .text-left-sm {
     text-align: left; }
   .tabs__text_sm {
-    font-size: 28px;
-    line-height: 41px; }
+    font-size: 16px;
+    line-height: 32px; }
   .tabs_sm {
     min-height: 500px; } }
 
@@ -1432,7 +1431,12 @@ html {
   .p-left-lg-110 {
     padding-left: 110px !important; }
   .scale-lg-1-2 {
-    transform: scale(1.2) !important; } }
+    transform: scale(1.2) !important; }
+  .tabs_lg {
+    min-height: 500px; }
+  .tabs__text_lg {
+    font-size: 28px;
+    line-height: 41px; } }
 
 @media (min-width: 1200px) {
   .p-xl-0 {
