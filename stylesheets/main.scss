@@ -206,7 +206,6 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 		position: relative;
 		z-index: 10;
 		border-color: $ratesSecondColor;
-		transform: scale(1.2);
 		transition: transform .5s;
 	}
 
@@ -341,6 +340,7 @@ $imgMaxWidth: 100%;
 }
 
 //review
+
 .review {
 	position: relative;
 	background: {
