@@ -1651,6 +1651,18 @@ html {
   position: relative;
   height: 500px;
   background: #f4f5f7; }
+  
+@media screen and (max-width: 1200px) {
+    .row_fixed-height {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row_fixed-height {
+        height: 400px;
+    }
+}
 
 .review {
   position: relative;
