@@ -4,7 +4,7 @@
     display: block;
     position: relative;
     font-family: inherit;
-    min-height: 500px;
+    min-height: 600px;
 
     &__content {
         display: block;
@@ -12,8 +12,8 @@
     }
 
     &__text {
-        font-size: 28px;
-        line-height: 41px;
+        font-size: 16px;
+        line-height: 32px;
         text-align: center;
         color:$colorWhite;
         margin: {
@@ -49,6 +49,7 @@
         align-items: center;
         position: absolute;
         justify-content: center;
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
 
