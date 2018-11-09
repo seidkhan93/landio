@@ -18,7 +18,7 @@
   	.p-sm-0 {
     	padding: 0 !important;
   	}
-	
+
 	.p-left-sm-110 {
 		padding-left: 110px !important;
 	}
@@ -26,6 +26,28 @@
 	.scale-sm-1-2 {
 		transform: scale(1.2) !important;
 	}
+
+    .mb-sm-30 {
+     margin-bottom: 30px;
+   }
+
+   .mb-sm-60 {
+     margin-bottom: 60px;
+   }
+
+   .text-left-sm {
+       text-align: left;
+   }
+
+   .tabs__text_sm {
+       font-size: 28px;
+       line-height: 41px;
+
+   }
+
+   .tabs_sm {
+       min-height: 500px;
+   }
 }
 
 @media (min-width: 768px) {

@@ -20,13 +20,13 @@ var dict = [
         text: "“Yeah! And you know that 'existence of God' thing that I had trouble understanding before? I think I am starting to understand it now. Maybe, just maybe, it's a concept that's similar to a zero in mathematics. In analog, that's God. In digital, it's zero.”",
         img: "../src/icons/tabs/2.jpg"
     }
-]; 
+];
 
 for (var i = 0, l = Object.keys(dict).length; i < l; i++) {
     $(contPath+"_"+i).append(
         '<img class="tabs__img tabs__img_content" src="' + dict[i].img + '" >' +
-        '<blockquote class="tabs__text">' + dict[i].text + '</blockquote>' +
-        '<h3 class="tabs__text tabs__text_name">' + dict[i].name + '</h3>' );
+        '<blockquote class="tabs__text tabs__text_sm">' + dict[i].text + '</blockquote>' +
+        '<h3 class="tabs__text tabs__text_name  tabs__text_sm">' + dict[i].name + '</h3>' );
 }
 tabFunction('1');
 function tabFunction(id) {
@@ -36,12 +36,10 @@ function tabFunction(id) {
 }
 
 tabsContainer.click((e) => {
-    const { target } = e; 
+    const { target } = e;
       if (!target.dataset.id) {
         e.stopPropagation();
     } else {
         tabFunction(target.dataset.id);
     }
 });
-
-

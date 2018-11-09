@@ -1295,13 +1295,13 @@ html {
   display: block;
   position: relative;
   font-family: inherit;
-  min-height: 500px; }
+  min-height: 600px; }
   .tabs__content {
     display: block;
     text-align: center; }
   .tabs__text {
-    font-size: 28px;
-    line-height: 41px;
+    font-size: 16px;
+    line-height: 32px;
     text-align: center;
     color: #ffffff;
     margin-top: 6.7px;
@@ -1325,6 +1325,7 @@ html {
     align-items: center;
     position: absolute;
     justify-content: center;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%); }
   .tabs__input {
@@ -1404,7 +1405,18 @@ html {
   .p-left-sm-110 {
     padding-left: 110px !important; }
   .scale-sm-1-2 {
-    transform: scale(1.2) !important; } }
+    transform: scale(1.2) !important; }
+  .mb-sm-30 {
+    margin-bottom: 30px; }
+  .mb-sm-60 {
+    margin-bottom: 60px; }
+  .text-left-sm {
+    text-align: left; }
+  .tabs__text_sm {
+    font-size: 28px;
+    line-height: 41px; }
+  .tabs_sm {
+    min-height: 500px; } }
 
 @media (min-width: 768px) {
   .p-md-0 {
