@@ -1,6 +1,7 @@
 @import "variables";
 
 .title {
+
 	font-size: 28px;
 	line-height: 33px;
 	color: $textColor;
@@ -9,14 +10,25 @@
 		color: $colorWhite;
 	}
 
-	&_big {
-		font-size: 80px;
-		line-height: 94px;
-	}
+		&_big {
+			font-size: 55px;
+			line-height: 69px;
+		}
 
 	&_slider {
 		line-height: 33px;
 	}
 }
+
+@media (min-width: 576px) {
+	.title {
+		&_big {
+			font-size: 80px;
+			line-height: 94px;
+		}
+	}
+}		
+
+
 
 
