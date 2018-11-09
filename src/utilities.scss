@@ -40,8 +40,8 @@
    }
 
    .tabs__text_sm {
-       font-size: 28px;
-       line-height: 41px;
+       font-size: 16px; //28
+       line-height: 32px; //41
 
    }
 
@@ -76,6 +76,16 @@
 	.scale-lg-1-2 {
 		transform: scale(1.2) !important;
 	}
+
+    .tabs_lg {
+        min-height: 500px;
+    }
+
+    .tabs__text_lg {
+        font-size: 28px; //28
+        line-height: 41px; //41
+
+    }
 }
 
 @media (min-width: 1200px) {
