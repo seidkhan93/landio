@@ -1436,7 +1436,9 @@ html {
     min-height: 500px; }
   .tabs__text_lg {
     font-size: 28px;
-    line-height: 41px; } }
+    line-height: 41px; }
+  .text-left-lg {
+    text-align: left !important; } }
 
 @media (min-width: 1200px) {
   .p-xl-0 {
