@@ -88,6 +88,36 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	}
 }
 
+.hamburger {
+    background:none;
+    position:absolute;
+    top:20px;
+    padding: 10px;
+    display: none;
+    right:0;
+    color:#fff;
+    font-size: 25px;
+    line-height: 45px;  
+    border:none;
+    cursor:pointer;
+    outline:none;
+    z-index: 500;
+}
+
+@media screen and (max-width:768px){
+    .action__header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        margin-top: 40px;
+    }
+
+	.hamburger{
+		display: block;
+	}
+}
+
 // Socials block component
 .socials {
 	display: block;
