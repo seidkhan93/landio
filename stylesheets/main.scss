@@ -118,6 +118,13 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	}
 }
 
+@media screen and (min-width: 768px){
+	.action__header{
+		display: flex;
+	}
+}
+
+
 // Socials block component
 .socials {
 	display: block;

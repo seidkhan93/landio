@@ -1531,6 +1531,10 @@ html {
   .hamburger {
     display: block; } }
 
+@media screen and (min-width: 769px) {
+  .action__header {
+    display: flex !important;  } }
+
 .socials {
   display: block;
   width: 100%;
